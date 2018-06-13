@@ -1,14 +1,12 @@
 //index.js
 //获取应用实例
+var util = require('../../utils/util.js') //引入模块
 const app = getApp()
 
 Page({
   data: {
-
     feed:[],
-    feed_length:0,
-    toView: 'red',
-    scrollTop: 100
+    feed_length:0
   },
   //事件处理函数
   bindItemTap: function () {
@@ -32,7 +30,17 @@ Page({
     //调用应用实例的方法获取全局数据
     this.getData();
   },
-
+  //使用本地 fake 数据实现刷新效果
+  getData: function () {
+    var feed = util.getData2();
+    console.log("load data");
+    var feed_data = feed.data;
+    console.log(feed_data);
+    this.setData({
+      feed: feed_data,
+      feed_length: feed_data.length
+    });
+  },
   upper: function () {
     wx.showNavigationBarLoading();
     this.refresh();
@@ -62,23 +70,20 @@ Page({
       });
   },
 
-  //使用本地 fake 数据实现刷新效果
-  getData: function () {
+
+  refresh: function () {
+    wx.showToast({
+      title: '刷新中',
+      icon: 'loading',
+      duration: 1000
+    }); 
     var feed = util.getData2();
-    console.log("load data");
+    console.log("loaddata");
     var feed_data = feed.data;
     this.setData({
       feed: feed_data,
       feed_length: feed_data.length
     });
-  },
-  refresh: function () {
-    wx.showToast({
-      title: '刷新中',
-      icon: 'loading',
-      duration: 3000
-    });
-   
     setTimeout(function () {
       wx.showToast({
         title: '刷新成功',

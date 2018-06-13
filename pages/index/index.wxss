@@ -4,15 +4,17 @@
   height: 1500rpx;
 }
 .container .search{
-  width: 735rpx;
+  width: 100%rpx;
   height: 65rpx;
-  padding: 12.5rpx 0 12.5rpx 15rpx;
+  padding: 12.5rpx 0rpx 12.5rpx 10rpx;
   background: #2A8CE5;
 }
 .container .search-left{
-  flex: 8;
+  width: 100%;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
   background: #4EA3E7;
-  text-align: left;
+  text-align: center;
 }
 .container .search-left input{
   display: inline-block;
@@ -30,7 +32,7 @@
   padding: 15rpx 15rpx 15rpx 20rpx;
 }
 .container .search .search-right{
-  flex: 1;
+   flex: 1; 
 }
 .container .search .search-right image{
   width: 45rpx;
