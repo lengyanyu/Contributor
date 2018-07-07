@@ -10,11 +10,12 @@
                 <text class="tag">文学</text>
             </view>
             <view class="que-title">
-                选择 Kindle 而不是纸质书的原因是什么？
+                存储器（主存和缓存地址）以八位二进制为一个基本单元,也就是一个字节,每个存储单元对应着一个地址主存容量为512KB=512k*1B（数据线8根即8位），主存地址看地址总线19位即512K，数据总线为3根，表示8位1B只有直接映射方式下，主存子块标记可用主存...
             </view>
             <view class="que-content">
-                WEB前端*不靠谱天气预报员*想做代码小仙女
+               曾以为那就是永远。。。
             </view>
+
             <view class="que-follow">
                 <view class="left">
                     <view class="watch">
@@ -34,7 +35,7 @@
         <view class="que-operate flex-wrp">
             <view class="invite flex-item">
                 <image src="../../images/invite.png"></image>
-                <text>邀请回答</text>
+                <text>邀请收听</text>
             </view>
             <view class="write flex-item">
                 <image src="../../images/write.png"></image>
@@ -58,15 +59,7 @@
                         <text class="answer-txt">难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的... </text>
                     </view>
                     <view class="answer-actions">
-                        <view class="like dot">
-                            <a>3.9K 赞同 </a>
-                        </view>
-                        <view class="comments dot">
-                            <a>254 评论 </a>
-                        </view>
-                        <view class="time">
-                            <a>2 个月前</a>
-                        </view>
+                       
 
                     </view>
                 </view>

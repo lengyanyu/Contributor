@@ -1,4 +1,14 @@
-
+<template name="master-column">
+	<view class="master-info" bindtap="toPerson" data-master="czy">
+		<image src="/images/avatar/{{avater}}"></image>
+		<view class="master-brief">
+			<view class="master-user">{{name}}</view>
+			<view class="master-intro">{{intro}}</view>
+			<view class="master-fans">{{fans}} 收听</view>
+		</view>
+		<view class="master-follow">收听</view>
+	</view>
+</template>
 <view class="top-tab flex-wrp flex-tab " >
   <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
     {{itemName}}
@@ -15,50 +25,24 @@
         </swiper-item>
       </block>
     </swiper>
-
-    <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
-      <view class="feed-item">
-        <view class="feed-source">
-          <a class="">
-            <view class="avatar">
-              <image src="{{item.feed_source_img}}"></image>
-            </view>
-            <text>{{item.feed_source_name}}</text>
-          </a>
-        </view>
-        <view class="feed-content">
-          <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
-            <a class="question-link">
-              <text>{{item.question}}</text>
-            </a>
-          </view>
-          <view class="answer-body">
-            <view bindtap="bindItemTap">
-              <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
-            </view>
-            <view class="answer-actions" bindtap="bindItemTap">
-              <view class="like dot">
-                <a>{{item.good_num}} 赞同 </a>
-              </view>
-              <view class="comments dot">
-                <a>{{item.comment_num}} 评论 </a>
-              </view>
-              <view class="follow-it">
-                <a>关注问题</a>
-              </view>
-            </view>
-          </view>
-        </view>
-      </view>
-    </block>
   </view>
-  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
-    <text>圆桌</text>
-  </view>
-  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
-    <text>热门</text>
-  </view>
-  <view class="ctnt3 placehold" hidden="{{currentNavtab==3 ? '' : true}}">
-    <text>收藏</text>
+  <view class="column-title">热推</view>
+  <view class="column-wrapper1">
+    
+    <view style="float:left;">
+      <view class="column-xuezhe">同市学者</view>
+      <block wx:for="{{hotMasters}}" style="width:50%">
+        <template is="master-column" data="{{...item}}"/>
+      </block>
+    </view>
+   >
+    <view style="float:right;">
+      <view class="column-xuezhe">同省学者</view>
+      <block wx:for="{{hotMasters}}" style="width:50%">
+        <template is="master-column" data="{{...item}}"/>
+      </block>
+    </view>
+   
   </view>
 </scroll-view>
+

@@ -1,2 +1,49 @@
-<!--pages/more/more.wxml-->
-<text>pages/more/more.wxml</text>
+
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+     <image src="../../images/touxiang.png" style="width:200px; height:150px;vertical-align: middle;"></image>
+    </view>
+    <view class="user-info flex-item">
+      
+      <text class="edit1">临晨初雨</text>
+      <text class='edit2'>编辑我的主页</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/wenti.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的问题</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/shouru.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收入</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/dayou.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的答友</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/jibie.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的级别</text>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,112 +1,39 @@
 /**
- *
+ * Created by Rebecca_Han on 16/10/26.
  */
 module.exports = {
 
 }
 
-var index = {
-  "id": 1,
-  "data": [
-    {
-      "question_id": 1,
-      "answer_id": 3,
-      "feed_source_id": 23,
-      "feed_source_name": "Rebecca",
-      "feed_source_txt": "赞了回答1",
-      "feed_source_img": "../../images/icon1.jpeg",
-      "question": "选择 Kindle 而不是纸质书的原因是什么？",
-      "answer_ctnt": "难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的怎么真心不懂了...",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 2,
-      "answer_id": 25,
-      "feed_source_id": 24,
-      "feed_source_name": "Alex",
-      "feed_source_txt": "回答了问题2",
-      "feed_source_img": "../../images/icon8.jpg",
-      "question": "如何评价周杰伦的「中文歌才是最屌的」的言论？",
-      "answer_ctnt": "不知道题主是否是学音乐的。 音乐有公认的经典，也有明显的流行趋势没有错。但归根结底，音乐是一种艺术，艺术是很主观的东西。跟画作一个道理，毕加索是大家，但很多人看不懂他的话，甚至觉得很难看...",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 3,
-      "answer_id": 61,
-      "feed_source_id": 25,
-      "feed_source_name": "George",
-      "feed_source_txt": "赞了回答3",
-      "feed_source_img": "../../images/icon9.jpeg",
-      "question": "气象铁塔的辐射大吗？",
-      "answer_ctnt": "我不知道那个铁塔的情况，不过气象铁塔上会有一些测太阳辐射的设备，如果说辐射的话，太阳辐射那么多，大家赶紧躲进地底下呀~~~~~要不然辐射量这么大，会变异的呀~~~~",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 4,
-      "answer_id": 3,
-      "feed_source_id": 23,
-      "feed_source_name": "Rebecca",
-      "feed_source_txt": "赞了回答4",
-      "feed_source_img": "../../images/icon1.jpeg",
-      "question": "选择 Kindle 而不是纸质书的原因是什么？",
-      "answer_ctnt": "难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的怎么真心不懂了...",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 5,
-      "answer_id": 25,
-      "feed_source_id": 24,
-      "feed_source_name": "Alex",
-      "feed_source_txt": "回答了问题5",
-      "feed_source_img": "../../images/icon8.jpg",
-      "question": "如何评价周杰伦的「中文歌才是最屌的」的言论？",
-      "answer_ctnt": "不知道题主是否是学音乐的。 音乐有公认的经典，也有明显的流行趋势没有错。但归根结底，音乐是一种艺术，艺术是很主观的东西。跟画作一个道理，毕加索是大家，但很多人看不懂他的话，甚至觉得很难看...",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 6,
-      "answer_id": 61,
-      "feed_source_id": 25,
-      "feed_source_name": "George",
-      "feed_source_txt": "赞了回答6",
-      "feed_source_img": "../../images/icon9.jpeg",
-      "question": "气象铁塔的辐射大吗？",
-      "answer_ctnt": "我不知道那个铁塔的情况，不过气象铁塔上会有一些测太阳辐射的设备，如果说辐射的话，太阳辐射那么多，大家赶紧躲进地底下呀~~~~~要不然辐射量这么大，会变异的呀~~~~",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 7,
-      "answer_id": 3,
-      "feed_source_id": 23,
-      "feed_source_name": "Rebecca",
-      "feed_source_txt": "赞了回答7",
-      "feed_source_img": "../../images/icon1.jpeg",
-      "question": "选择 Kindle 而不是纸质书的原因是什么？",
-      "answer_ctnt": "难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的怎么真心不懂了...",
-      "good_num": "112",
-      "comment_num": "18"
-    },
-    {
-      "question_id": 8,
-      "answer_id": 25,
-      "feed_source_id": 24,
-      "feed_source_name": "Alex",
-      "feed_source_txt": "回答了问题8",
-      "feed_source_img": "../../images/icon8.jpg",
-      "question": "如何评价周杰伦的「中文歌才是最屌的」的言论？",
-      "answer_ctnt": "不知道题主是否是学音乐的。 音乐有公认的经典，也有明显的流行趋势没有错。但归根结底，音乐是一种艺术，艺术是很主观的东西。跟画作一个道理，毕加索是大家，但很多人看不懂他的话，甚至觉得很难看...",
-      "good_num": "112",
-      "comment_num": "18"
-    }
+var index= {
+    "id": 1,
+        "data": [
+        {
+            "question_id": 1,
+            "answer_id": 3,
+            "feed_source_id": 23,
+            "feed_source_name": "吴泽煜",
+            "feed_source_txt": "给了个赞",
+            "feed_source_img": "../../images/new1.png",
+            "question": "设主存容量为256K字，Cache容量为2K字， 块长为4。 （1）设计Cache地址格式，Cache中可装入多少块 数据？ （2）在直接映射方式下，设计主存地址格式。 （3）在四路组相联映射方式下，设计主存地址格 式。 （4）在全相联映射方式下，设计主存地址格式。 （5）若存储字长为32位，存储器按字节寻址，写 出上述三种映射方式下主存的地址格式",
+            "answer_ctnt": "存储器（主存和缓存地址）以八位二进制为一个基本单元,也就是一个字节,每个存储单元对应着一个地址主存容量为512KB=512k*1B（数据线8根即8位），主存地址看地址总线19位即512K，数据总线为3根，表示8位1B只有直接映射方式下，主存子块标记可用主存容量/Cache容量",
+            "good_num": "112",
+            "comment_num": "18"
+        },
+        {
+            "question_id": 2,
+            "answer_id": 25,
+            "feed_source_id": 24,
+            "feed_source_name": "吴泽煜媳妇",
+            "feed_source_txt": "也给了个赞",
+            "feed_source_img": "../../images/new2.png",
+            "question": "某 8 位微型机地址码为 18 位，若使用 4K× 4 位的 RAM 芯片组成模块板结构的存储器，试问：（1）该机所允许的最大主存空间是多少？（2）若每个模块板为 32K×8 位，共需几个模块板？（3）每个模块板内共有几片 RAM 芯片？（4）共有多少片 RAM ？（5）CPU 如何选择各模块板？",
+            "answer_ctnt": "1）该机所允许的最大主存空间是： 2^18× 8 位 = 256K ×8 位 = 256KB2）模块板总数 = 256K × 8 / 32K × 8 = 8 块（3）板内片数 = 32K ×8 位 / 4K × 4 位 = 8 ×2 = 16 片（4）总片数 = 16 片×8 = 128 （5）CPU 通过最高 3 位地址译码输出选择模板，次高 3 位地址译码输出选择芯片。地址格式分配如下：模块板是8位的，每两个芯片组成一个芯片地址，一共16片，8个地址",
+            "good_num": "112",
+            "comment_num": "18"
+        }
 
-  ]
+    ]
 
 }
-
 module.exports.index = index;

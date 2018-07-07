@@ -1,1 +1,75 @@
-/* pages/more/more.wxss */
+.user {
+  width: 725rpx;
+  background: #ffffff;
+  padding: 30rpx 25rpx 30rpx 0;
+  margin: 15rpx 0 0 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0 2px 5px #eeeeee;
+  height: 300rpx;
+}
+
+.user .avatar{
+  flex: 1;
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 80rpx blue ;
+}
+
+.user .user-info{
+  flex: 5;
+  text-align: left;
+}
+.user .user-info text{
+  display: block;
+}
+.user .user-info .userinfo-nickname{
+  padding: 8rpx 0 10rpx 0;
+  font-size: 30rpx;
+  color: #818A8F;
+}
+.user .user-info .edit1{
+  font-size: 50rpx;
+  color: black;
+  font-style: strong;
+  text-align: right;
+  margin-right: 50rpx;
+}
+.user .user-info .edit2{
+  font-size: 40rpx;
+  color: 99AACB;
+  margin-top: 80rpx;
+  margin-left: 350rpx;
+}
+
+.my{
+  margin: 15rpx 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+}
+.my .my-item{
+  width: 750rpx;
+  background: #ffffff;
+  padding: 0
+}
+.my .my-item .myitem-icon{
+  flex: 1;
+}
+.my .my-item .myitem-icon image{
+  width: 45rpx;
+  height: 45rpx;
+  padding: 37.5rpx 0;
+}
+.my .my-item .myitem-name{
+  flex: 5;
+  text-align: left;
+  font-size: 34rpx;
+  color: #6d6d6d;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.my .my-item:last-child .myitem-name{
+  border-bottom: none;
+}

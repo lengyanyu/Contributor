@@ -1,1 +1,97 @@
-/* pages/discovery/discovery.wxss */
+.container{
+  height: 1500rpx;
+}
+.top-tab{
+  width: 750rpx;
+  height: 100rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8rpx 0;
+  z-index: 9999;
+}
+.column-title{
+	background-color: #fff;
+	text-align: center;
+	padding: 30rpx;
+	font-size: 28rpx;
+	color: #666;
+ 
+}
+.column-xuezhe{
+	background-color: #fff;
+	text-align: center;
+	font-size: 28rpx;
+	color: #666;
+  font-weight: bold; 
+}
+
+.master-info{
+  width: 375rpx;
+	border-top: 1rpx solid #efefef;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	background-color: #fff;
+  
+}
+.master-info image{
+	width: 20rpx;
+	height: 20rpx;
+	border-radius: 50%;
+}
+.master-brief{
+	height: 100rpx;
+	padding-left: 50rpx;
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: flex-start;
+
+}
+.master-user{
+	font-size: 23rpx;
+	letter-spacing: 1px;
+}
+.master-intro {
+	color:888888;
+	width: 300rpx;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18rpx;
+}
+.master-fans{
+	color: 888888;
+  font-size: 18rpx;
+}
+.master-follow{
+	color: #ddd;
+	width: 80rpx;
+	padding: 10rpx;
+	border-radius: 50rpx;
+	background-color: #999;
+	
+  margin-left: 200rpx;
+}
+.toptab.active{
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
+}
+.activity{
+  width: 750rpx;
+  height: 375rpx;
+}
+.activity image{
+  width: 750rpx;
+  height: 375rpx;
+}
+.placehold{
+  font-size: 28rpx;
+  padding: 80rpx 0;
+}
