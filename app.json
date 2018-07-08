@@ -29,12 +29,13 @@
       "pagePath": "pages/discovery/discovery",
       "text": "问答",
       "iconPath": "images/T-wenda.png",
-      "selectedIconPath": "images/discovery_focus.png"
+      "selectedIconPath": "images/T-wenda.png"
+       
     }, {
       "pagePath": "pages/more/more",
       "text": "我的页面",
       "iconPath": "images/T-mypage.png",
-      "selectedIconPath": "images/burger_focus.png"
+      "selectedIconPath": "images/T-mypage.png"
     }]
   },
   "networkTimeout": {
